@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Timer</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Timer</a></li>
+            <li><a href="nodeTypes.html">Nodes</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+        <ul class="node-list">
+            <li>
+                Study &gt;&gt; 30:00
+                <ul>
+                    <li>Maths &gt;&gt; 10:00</li>
+                    <li>Physics &gt;&gt; 15:00</li>
+                    <li>History &gt;&gt; 5:00</li>
+                </ul>
+            </li>
+        </ul>
+
+        <form>
+            <label for="node-name">Node Name:</label>
+            <input type="text"> <br>
+            <label for="node-parent">Parent Node:</label>
+            <select id="node-parent" name="node-parent">
+                <option value="study">Study</option>
+            </select>
+            <br>
+            <input type="button" id="create-node-button" value="Create Node">
+        </form>
+
+    </main>
+
+    <script src="./script/nodeTypes.js"></script>
+</body>
+
+</html>
