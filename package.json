@@ -1,0 +1,13 @@
+{
+  "name": "study-timer-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SenYanHo/study-timer-app.git",
+  "author": "SenYanHo <123sendodo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10"
+  }
+}
