@@ -33,15 +33,15 @@
             </li>
         </ul>
 
-        <form>
+        <form action="/nodes/create" method="get">
             <label for="node-name">Node Name:</label>
-            <input id="node-name" type="text"> <br>
-            <label for="node-parent">Parent Node:</label>
-            <select id="node-parent">
+            <input name="name" id="node-name" type="text"> <br>
+            <label for="node-parent-select">Parent Node:</label>
+            <select name="parent" id="node-parent-select">
                 <option value="study">Study</option>
             </select>
             <br>
-            <input type="button" id="create-node-button" value="Create Node">
+            <input type="submit" value="Create Node">
         </form>
 
     </main>
