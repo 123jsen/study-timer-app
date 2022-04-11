@@ -1,7 +1,7 @@
 {
   "name": "study-timer-app",
   "version": "1.0.0",
-  "main": "./src/app.js",
+  "main": "./lib/app.js",
   "repository": "https://github.com/SenYanHo/study-timer-app.git",
   "author": "SenYanHo <123sendodo@gmail.com>",
   "license": "MIT",
@@ -11,6 +11,6 @@
     "mongoose": "^6.2.10"
   },
   "nodemonConfig": {
-    "watch": "./src"
+    "watch": "./lib"
   }
 }
