@@ -18,6 +18,21 @@ function updateTimer() {
     timerText.innerText = mins + ":" + secs;
 }
 
+async function sendTimerData() {
+    const response = await fetch("/timer/add", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: nodeSelector.value,
+            startTime, startTime,
+            endTime: endTime
+        })
+    });
+    console.log(response);
+}
+
 function handleTimer(event) {
     console.log("Timer Button Pressed");
     event.preventDefault();
@@ -27,6 +42,7 @@ function handleTimer(event) {
         timerOn = false;
         endTime = new Date();
         timerButton.innerText = "Start Timer";
+        sendTimerData();
         updateNodeSelectors();
         clearInterval(intervalCount);
     }
