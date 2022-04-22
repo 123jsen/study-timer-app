@@ -1,0 +1,50 @@
+$color-bg: #EDE6DB;
+$color-light: #417D7A;
+$color-dark: #1D5C63;
+$color-darker: #1A3C40;
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #EDE6DB;
+}
+
+nav {
+	ul {
+		list-style-type: none;
+		display: flex;
+		flex-grow: 100%;
+		background-color: #1A3C40;
+	}
+
+	li {
+		a {
+			width: 200px;
+			display: block;
+			padding: 12px;
+			color: white;
+			text-align: center;
+			background-color: #1A3C40;
+		}
+
+		:hover {
+			background-color: #1D5C63;
+		}
+
+		.active {
+			background-color: #1D5C63;
+		}
+	}
+}
+
+#timer-text {
+	height: 70vh;
+	line-height: 70vh;
+	text-align: center;
+	font-size: 400%;
+	margin: 50px;
+	box-sizing: border-box;
+	background-color: #417D7A;
+	color: white;
+}
