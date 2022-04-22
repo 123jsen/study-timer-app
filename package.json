@@ -2,6 +2,9 @@
   "name": "study-timer-app",
   "version": "1.0.0",
   "main": "./lib/app.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon\" \"sass --watch public/styles:public/styles\""
+  },
   "repository": "https://github.com/SenYanHo/study-timer-app.git",
   "author": "SenYanHo <123sendodo@gmail.com>",
   "license": "MIT",
@@ -9,9 +12,13 @@
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "mongoose": "^6.2.10"
+    "mongoose": "^6.2.10",
+    "sass": "^1.50.1"
   },
   "nodemonConfig": {
     "watch": "./lib"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
   }
 }

@@ -1,0 +1,1 @@
+concurrently "nodemon" "sass --watch public/styles"
