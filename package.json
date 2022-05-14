@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "./lib/app.js",
   "scripts": {
-    "start": "node lib/app.js",
-    "dev": "concurrently \"nodemon\" \"sass --watch public/styles:public/styles\""
+    "start": "concurrently \"nodemon\" \"sass --watch public/styles:public/styles\""
   },
   "repository": "https://github.com/SenYanHo/study-timer-app.git",
   "author": "SenYanHo <123sendodo@gmail.com>",
