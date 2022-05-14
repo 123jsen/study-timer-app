@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "./lib/app.js",
   "scripts": {
-    "start": "concurrently \"nodemon\" \"sass --watch public/styles:public/styles\""
+    "start": "sass public/styles:public/styles && node .",
+    "dev": "concurrently \"nodemon\" \"sass --watch public/styles:public/styles\""
   },
   "repository": "https://github.com/SenYanHo/study-timer-app.git",
   "author": "SenYanHo <123sendodo@gmail.com>",
@@ -13,7 +14,7 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mongoose": "^6.2.10",
-    "sass": "^1.50.1"
+    "sass": "^1.51.0"
   },
   "nodemonConfig": {
     "watch": "./lib"
